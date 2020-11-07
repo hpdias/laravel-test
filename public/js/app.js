@@ -3028,77 +3028,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -26156,13 +26085,13 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "mt-8 text-2xl" }, [
             _vm._v(
-              "\n                Welcome to your Jetstream application!\n            "
+              "\r\n                Welcome to your Jetstream application!\r\n            "
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "mt-6 text-gray-500" }, [
             _vm._v(
-              "\n                Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\n                to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\n                you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\n                ecosystem to be a breath of fresh air. We hope you love it.\n            "
+              "\r\n                Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\r\n                to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\r\n                you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\r\n                ecosystem to be a breath of fresh air. We hope you love it.\r\n            "
             )
           ])
         ]
@@ -26217,7 +26146,7 @@ var render = function() {
             _c("div", { staticClass: "ml-12" }, [
               _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                 _vm._v(
-                  "\n                        Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.\n                    "
+                  "\r\n                        Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.\r\n                    "
                 )
               ]),
               _vm._v(" "),
@@ -26307,7 +26236,7 @@ var render = function() {
               _c("div", { staticClass: "ml-12" }, [
                 _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                   _vm._v(
-                    "\n                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.\n                    "
+                    "\r\n                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.\r\n                    "
                   )
                 ]),
                 _vm._v(" "),
@@ -26392,7 +26321,7 @@ var render = function() {
             _c("div", { staticClass: "ml-12" }, [
               _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                 _vm._v(
-                  "\n                        Laravel Jetstream is built with Tailwind, an amazing utility first CSS framework that doesn't get in your way. You'll be amazed how easily you can build and maintain fresh, modern designs with this wonderful framework at your fingertips.\n                    "
+                  "\r\n                        Laravel Jetstream is built with Tailwind, an amazing utility first CSS framework that doesn't get in your way. You'll be amazed how easily you can build and maintain fresh, modern designs with this wonderful framework at your fingertips.\r\n                    "
                 )
               ])
             ])
@@ -26439,7 +26368,7 @@ var render = function() {
               _c("div", { staticClass: "ml-12" }, [
                 _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                   _vm._v(
-                    "\n                        Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.\n                    "
+                    "\r\n                        Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.\r\n                    "
                   )
                 ])
               ])
@@ -26597,205 +26526,6 @@ var render = function() {
                               key: "content",
                               fn: function() {
                                 return [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "block px-4 py-2 text-xs text-gray-400"
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Manage Account\n                "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "jet-dropdown-link",
-                                    {
-                                      attrs: { href: _vm.route("profile.show") }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Profile\n                "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _vm.$page.jetstream.hasApiFeatures
-                                    ? _c(
-                                        "jet-dropdown-link",
-                                        {
-                                          attrs: {
-                                            href: _vm.route("api-tokens.index")
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                  API Tokens\n                "
-                                          )
-                                        ]
-                                      )
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  _c("div", {
-                                    staticClass: "border-t border-gray-100"
-                                  }),
-                                  _vm._v(" "),
-                                  _vm.$page.jetstream.hasTeamFeatures
-                                    ? [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "block px-4 py-2 text-xs text-gray-400"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                    Manage Team\n                  "
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "jet-dropdown-link",
-                                          {
-                                            attrs: {
-                                              href: _vm.route(
-                                                "teams.show",
-                                                _vm.$page.user.current_team
-                                              )
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                    Team Settings\n                  "
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _vm.$page.jetstream.canCreateTeams
-                                          ? _c(
-                                              "jet-dropdown-link",
-                                              {
-                                                attrs: {
-                                                  href: _vm.route(
-                                                    "teams.create"
-                                                  )
-                                                }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                    Create New Team\n                  "
-                                                )
-                                              ]
-                                            )
-                                          : _vm._e(),
-                                        _vm._v(" "),
-                                        _c("div", {
-                                          staticClass:
-                                            "border-t border-gray-100"
-                                        }),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "block px-4 py-2 text-xs text-gray-400"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                    Switch Teams\n                  "
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _vm._l(
-                                          _vm.$page.user.all_teams,
-                                          function(team) {
-                                            return [
-                                              _c(
-                                                "form",
-                                                {
-                                                  key: team.id,
-                                                  on: {
-                                                    submit: function($event) {
-                                                      $event.preventDefault()
-                                                      return _vm.switchToTeam(
-                                                        team
-                                                      )
-                                                    }
-                                                  }
-                                                },
-                                                [
-                                                  _c(
-                                                    "jet-dropdown-link",
-                                                    { attrs: { as: "button" } },
-                                                    [
-                                                      _c(
-                                                        "div",
-                                                        {
-                                                          staticClass:
-                                                            "flex items-center"
-                                                        },
-                                                        [
-                                                          team.id ==
-                                                          _vm.$page.user
-                                                            .current_team_id
-                                                            ? _c(
-                                                                "svg",
-                                                                {
-                                                                  staticClass:
-                                                                    "mr-2 h-5 w-5 text-green-400",
-                                                                  attrs: {
-                                                                    fill:
-                                                                      "none",
-                                                                    "stroke-linecap":
-                                                                      "round",
-                                                                    "stroke-linejoin":
-                                                                      "round",
-                                                                    "stroke-width":
-                                                                      "2",
-                                                                    stroke:
-                                                                      "currentColor",
-                                                                    viewBox:
-                                                                      "0 0 24 24"
-                                                                  }
-                                                                },
-                                                                [
-                                                                  _c("path", {
-                                                                    attrs: {
-                                                                      d:
-                                                                        "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                                                    }
-                                                                  })
-                                                                ]
-                                                              )
-                                                            : _vm._e(),
-                                                          _vm._v(" "),
-                                                          _c("div", [
-                                                            _vm._v(
-                                                              _vm._s(team.name)
-                                                            )
-                                                          ])
-                                                        ]
-                                                      )
-                                                    ]
-                                                  )
-                                                ],
-                                                1
-                                              )
-                                            ]
-                                          }
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", {
-                                          staticClass:
-                                            "border-t border-gray-100"
-                                        })
-                                      ]
-                                    : _vm._e(),
-                                  _vm._v(" "),
                                   _c(
                                     "form",
                                     {
@@ -45128,8 +44858,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Hilton\Documents\ProjetosGit\TESTE VAI\laravel-test\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Hilton\Documents\ProjetosGit\TESTE VAI\laravel-test\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\Users\Hilton\Documents\ProjetosGit\TESTE VAI\new\laravel-test\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Hilton\Documents\ProjetosGit\TESTE VAI\new\laravel-test\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })

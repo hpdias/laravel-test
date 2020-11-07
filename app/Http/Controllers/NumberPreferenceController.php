@@ -29,12 +29,11 @@ class NumberPreferenceController extends Controller
 
 
         // Get only the numbers preferenfces of the logged user
-        $numbersPreferences = DB::table('number_preferences')
-            ->select('number_preferences.id', 'customers.name as customer_name', 'numbers.number as number_name', 'number_preferences.name', 'number_preferences.value')
+        $numbersPreferences = NumberPreference::
+            select('number_preferences.id', 'customers.name as customer_name', 'numbers.number as number_name', 'number_preferences.name', 'number_preferences.value')
             ->join('numbers', 'numbers.id', '=', 'number_preferences.number_id')
             ->join('customers', 'numbers.customer_id', '=', 'customers.id')
             ->where('customers.user_id', Auth::user()->id)
-            ->where('number_preferences.deleted_at',NULL)
             ->get();
 
         return \Inertia\Inertia::render('NumberPreference/Index', [

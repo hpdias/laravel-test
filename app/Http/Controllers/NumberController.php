@@ -28,11 +28,10 @@ class NumberController extends Controller
     {
 
         // Get only the numbers of the logged user
-        $numbers = DB::table('numbers')
-            ->select('numbers.id', 'customers.name as customer_name', 'numbers.number', 'numbers.status')
+        $numbers = Number::
+            select('numbers.id', 'customers.name as customer_name', 'numbers.number', 'numbers.status')
             ->join('customers', 'numbers.customer_id', '=', 'customers.id')
             ->where('customers.user_id', Auth::user()->id)
-            ->where('numbers.deleted_at', NULL)
             ->get();
 
         $n = new Number();
