@@ -60,9 +60,9 @@ class NumberController extends Controller
 
         return \Inertia\Inertia::render('Number/Create', [
             'statusOptions' => $statusOption,
-            'customers' => $customers,
-            'number' => $number,
-            'error' => $this->error,
+            'customers'     => $customers,
+            'number'        => $number,
+            'error'         => $this->error,
             'flowCustomerId' => $request->query('customer_id') ?: null
         ]);
     }
@@ -143,9 +143,9 @@ class NumberController extends Controller
 
         return \Inertia\Inertia::render('Number/Create', [
             'statusOptions' => $statusOption,
-            'customers' => $customers,
-            'number' => $number,
-            'error' => $this->error
+            'customers'     => $customers,
+            'number'        => $number,
+            'error'         => $this->error
         ]);
     }
 
@@ -201,8 +201,8 @@ class NumberController extends Controller
     {
         return $request->validate([
             'customer_id' => 'required',
-            'number' => 'required|min:8|max:14',
-            'status' => 'required'
+            'number'      => 'required|min:8|max:14',
+            'status'      => 'required'
         ]);
     }
 }

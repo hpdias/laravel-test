@@ -37,7 +37,7 @@ class CustomerController extends Controller
 
         return \Inertia\Inertia::render('Customer/Index', [
             'customers' => $customers,
-            'error' => $this->error
+            'error'     => $this->error
         ]);
     }
 
@@ -55,9 +55,9 @@ class CustomerController extends Controller
 
         return \Inertia\Inertia::render('Customer/Create', [
             'statusOptions' => $statusOption,
-            'error' => $this->error,
-            'customer' => $customer,
-            'flow' => $request->query('flow') ? true : false
+            'error'         => $this->error,
+            'customer'      => $customer,
+            'flow'          => $request->query('flow') ? true : false
         ]);
     }
 
@@ -71,9 +71,9 @@ class CustomerController extends Controller
     {
 
         $data = $request->validate([
-            'name' => 'required',
+            'name'     => 'required',
             'document' => 'required|min:6|max:12',
-            'status' => 'required'
+            'status'   => 'required'
         ]);
 
         try {
@@ -119,8 +119,8 @@ class CustomerController extends Controller
 
         return \Inertia\Inertia::render('Customer/Create', [
             'statusOptions' => $statusOption,
-            'customer' => $customer,
-            'error' => $this->error
+            'customer'      => $customer,
+            'error'         => $this->error
         ]);
     }
 

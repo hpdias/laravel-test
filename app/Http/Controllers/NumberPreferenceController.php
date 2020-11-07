@@ -52,8 +52,8 @@ class NumberPreferenceController extends Controller
         $numbers = Number::all();
 
         return \Inertia\Inertia::render('NumberPreference/Create', [
-            'numbers' => $numbers,
-            'error' => $this->error,
+            'numbers'      => $numbers,
+            'error'        => $this->error,
             'flowNumberId' => $request->query('number_id') ?: null
 
         ]);
@@ -106,9 +106,9 @@ class NumberPreferenceController extends Controller
         $numbers = Number::all();
 
         return \Inertia\Inertia::render('NumberPreference/Create', [
-            'numbers' => $numbers,
+            'numbers'          => $numbers,
             'numberPreference' => $numberPreference,
-            'error' => $this->error
+            'error'            => $this->error
 
         ]);
     }
@@ -155,8 +155,8 @@ class NumberPreferenceController extends Controller
     {
         return $request->validate([
             'number_id' => 'required',
-            'name' => 'required',
-            'value' => 'required'
+            'name'      => 'required',
+            'value'     => 'required'
         ]);
     }
 
