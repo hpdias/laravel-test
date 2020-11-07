@@ -1,7 +1,7 @@
 
 
 <p align="center">
-LARAVEL TEST
+# Laravel Test
 </p>
 
 A simple project in Laravel.
