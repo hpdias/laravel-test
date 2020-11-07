@@ -12,7 +12,7 @@ class NumberPreference extends Model
     use SoftDeletes;
 
     //Fields to mass assignment
-    protected $fillable = ['number_id', 'name', 'value', ''];
+    protected $fillable = ['number_id', 'name', 'value'];
 
     public function number(){
         return  $this->belongsTo(Number::class);

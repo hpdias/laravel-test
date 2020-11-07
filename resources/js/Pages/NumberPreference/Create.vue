@@ -1,7 +1,7 @@
 <template>
   <app-layout>
     <div class="py-12">
-      <h1 class="mb-4">Create Number Preference</h1>
+      <p class="mb-4 text-primary font-weight-bold font-size-titles" >Create Numbers Preferences</p>
       <div v-show="error" class="alert alert-danger" role="alert">
         {{error}}
       </div>

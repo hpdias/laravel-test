@@ -1,7 +1,7 @@
 <template>
   <app-layout>
     <div class="py-12">
-      <h1 class="mb-4">Numbers Preferences</h1>
+      <p class="mb-4 text-primary font-weight-bold font-size-titles" >Numbers Preferences</p>
       <a href="/number_preference/create" class="my-2 btn btn-primary">
         <i class="fa fa-plus mr-2"></i>Add
       </a>

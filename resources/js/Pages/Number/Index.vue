@@ -1,7 +1,7 @@
 <template>
   <app-layout>
     <div class="py-12">
-      <h1 class="mb-4">Numbers</h1>
+      <p class="mb-4 text-primary font-weight-bold font-size-titles" >Numbers</p>
       <div v-show="error" class="alert alert-danger" role="alert">
         {{error}}
       </div>

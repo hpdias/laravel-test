@@ -27807,7 +27807,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("app-layout", [
     _c("div", { staticClass: "py-12" }, [
-      _c("h1", { staticClass: "mb-4" }, [_vm._v("Create Customers")]),
+      _c(
+        "p",
+        { staticClass: "mb-4 text-primary font-weight-bold font-size-titles" },
+        [_vm._v("Create Customers")]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -28081,7 +28085,13 @@ var render = function() {
     "app-layout",
     [
       _c("div", { staticClass: "py-12" }, [
-        _c("h1", { staticClass: "mb-4" }, [_vm._v("Customers")]),
+        _c(
+          "p",
+          {
+            staticClass: "mb-4 text-primary font-weight-bold font-size-titles"
+          },
+          [_vm._v("Customers")]
+        ),
         _vm._v(" "),
         _c(
           "div",
@@ -28497,7 +28507,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("app-layout", [
     _c("div", { staticClass: "py-12" }, [
-      _c("h1", { staticClass: "mb-4" }, [_vm._v("Create Number")]),
+      _c(
+        "p",
+        { staticClass: "mb-4 text-primary font-weight-bold font-size-titles" },
+        [_vm._v("Create Numbers")]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -28799,7 +28813,13 @@ var render = function() {
     "app-layout",
     [
       _c("div", { staticClass: "py-12" }, [
-        _c("h1", { staticClass: "mb-4" }, [_vm._v("Numbers")]),
+        _c(
+          "p",
+          {
+            staticClass: "mb-4 text-primary font-weight-bold font-size-titles"
+          },
+          [_vm._v("Numbers")]
+        ),
         _vm._v(" "),
         _c(
           "div",
@@ -28930,7 +28950,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("app-layout", [
     _c("div", { staticClass: "py-12" }, [
-      _c("h1", { staticClass: "mb-4" }, [_vm._v("Create Number Preference")]),
+      _c(
+        "p",
+        { staticClass: "mb-4 text-primary font-weight-bold font-size-titles" },
+        [_vm._v("Create Numbers Preferences")]
+      ),
       _vm._v(" "),
       _c(
         "div",
@@ -29168,7 +29192,13 @@ var render = function() {
     "app-layout",
     [
       _c("div", { staticClass: "py-12" }, [
-        _c("h1", { staticClass: "mb-4" }, [_vm._v("Numbers Preferences")]),
+        _c(
+          "p",
+          {
+            staticClass: "mb-4 text-primary font-weight-bold font-size-titles"
+          },
+          [_vm._v("Numbers Preferences")]
+        ),
         _vm._v(" "),
         _c(
           "a",
