@@ -61,11 +61,10 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button v-if="!flow" type="submit" class="btn btn-primary">
           {{ this.customer && this.customer.id ? "Edit" : "Create" }} Customer
-          {{ flow ? " and exit" : "" }}
         </button>
-        <button v-if="flow" type="submit" class="btn btn-primary ml-4">
+        <button v-else type="submit" class="btn btn-primary">
           Add Number <i class="fa fa-forward mr-2"></i>
         </button>
       </form>

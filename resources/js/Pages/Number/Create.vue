@@ -67,11 +67,10 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button v-if="!flowCustomerId" type="submit" class="btn btn-primary">
           {{ this.number && this.number.id ? "Edit" : "Create" }} Number
-          {{ flowCustomerId ? " and exit" : "" }}
         </button>
-        <button v-if="flowCustomerId" type="submit" class="btn btn-primary ml-4">
+        <button v-else type="submit" class="btn btn-primary ml-4">
           Add Number Preferences <i class="fa fa-forward mr-2"></i>
         </button>
       </form>
@@ -109,9 +108,10 @@ export default {
   },
 
   beforeMount() {
-    //if this variable is not null, then it is comming from the flow, needs to set the customer
+    //if this variable is not null, then it is comming from the flow, need set the customer
     if (this.flowCustomerId) {
       this.form.customer_id = this.flowCustomerId;
+      this.form.status = 1;
     }else 
     if (this.number) {
       this.form = this.number;
