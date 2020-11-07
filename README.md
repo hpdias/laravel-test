@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<h1> Laravel Test <h1>
+<h1> Laravel Test </h1>
 </p>
 
 A simple project in Laravel.
