@@ -34,6 +34,7 @@ class NumberPreferenceController extends Controller
             ->join('numbers', 'numbers.id', '=', 'number_preferences.number_id')
             ->join('customers', 'numbers.customer_id', '=', 'customers.id')
             ->where('customers.user_id', Auth::user()->id)
+            ->where('number_preferences.deleted_at',NULL)
             ->get();
 
         return \Inertia\Inertia::render('NumberPreference/Index', [

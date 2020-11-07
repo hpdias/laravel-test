@@ -23,7 +23,7 @@ class NumberFactory extends Factory
     public function definition()
     {
         return [
-            'customer_id' => Customer::factory()->create()->id,
+            'customer_id' => Customer::factory()->create(),
             'number' => $this->faker->numerify('##########'),
             'status' => $this->faker->numberBetween($min = 0, $max = 2),
         ];

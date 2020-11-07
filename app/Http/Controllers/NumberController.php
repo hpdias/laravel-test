@@ -32,6 +32,7 @@ class NumberController extends Controller
             ->select('numbers.id', 'customers.name as customer_name', 'numbers.number', 'numbers.status')
             ->join('customers', 'numbers.customer_id', '=', 'customers.id')
             ->where('customers.user_id', Auth::user()->id)
+            ->where('numbers.deleted_at', NULL)
             ->get();
 
         $n = new Number();

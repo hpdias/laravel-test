@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Customer;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\URL;
@@ -68,6 +69,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
+
         $data = $request->validate([
             'name' => 'required',
             'document' => 'required|min:6|max:12',
@@ -131,6 +133,10 @@ class CustomerController extends Controller
      */
     public function update(Request $request, Customer $customer)
     {
+        if(!$this->checkUser($customer)){
+            return $this->edit($customer);
+        }
+
         //Can edit only the status
         $data = $request->validate([
             'status' => 'required'
@@ -156,6 +162,10 @@ class CustomerController extends Controller
      */
     public function destroy(Customer $customer)
     {
+        if(!$this->checkUser($customer)){
+            return $this->index();
+        }
+
         if (!$customer->number->isEmpty()) {
             $this->error = 'Error: This record has dependency on the table of numbers';
 
@@ -166,5 +176,15 @@ class CustomerController extends Controller
 
             return $this->index();
         }
+    }
+
+    public function checkUser(Customer $customer){
+
+        if($customer->user_id == Auth::user()->id){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 }

@@ -26,7 +26,7 @@ class CustomerFactory extends Factory
             'name' =>  $this->faker->name,
             'document' => $this->faker->numerify('##########'),
             'status' => $this->faker->numberBetween($min = 0, $max = 3),
-            'user_id' => User::factory()->create()->id,
+            'user_id' => User::factory()->create(),
         ];
     }
 }
