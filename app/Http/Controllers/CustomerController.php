@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\URL;
 class CustomerController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     private $error = '';
 
     /**

@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\DB;
 class NumberPreferenceController extends Controller
 {
 
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     private $error = '';
 
     /**

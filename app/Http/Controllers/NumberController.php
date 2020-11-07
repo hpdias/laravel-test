@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\URL;
 class NumberController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     private $error = '';
 
     /**

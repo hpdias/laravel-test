@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //Will create without making the relationships
+        
+        \App\Models\User::factory(1)->create();
+        \App\Models\Customer::factory(10)->create();
+
+        //Create a random amount of numbers between 1 and 30
+        \App\Models\Number::factory(rand(1,30))->create();
     }
 }
