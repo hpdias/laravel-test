@@ -11,7 +11,7 @@ A simple project in Laravel.
 - Must have PHP installed (version 7.4 is recommended).
 - Must have composer installed.
 - Change de ```.env``` file with your database details
-- On the folder of the project run: ```composer install``` ```php artisan migrate``` and ```php artisan serve```
+- On the folder of the project run: ```composer install```, ```php artisan migrate``` and ```php artisan serve```
 - The program will start on local host on the port 8000
 - To seed the database run ```php artisan db:seed```
 - To run the tests run ```vendor/bin/phpunit```
